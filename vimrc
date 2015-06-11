@@ -58,14 +58,19 @@ set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
+let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+"my option
+let g:syntastic_auto_jump = 1
 "specific checker
 let g:syntastic_javascript_jshint_exec='/usr/local/lib/node_modules/jshint/bin/jshint'
 """""""""""""taglist setting"""""""""""""""""""""""
 map <F3> : Tlist<CR>
 let g:Tlist_Exit_OnlyWindow = 1
+let g:Tlist_Auto_Open = 1
+let g:Tlist_Auto_Update = 1
+let g:Tlist_Compact_Format = 1
 
 """"""""""""""cscope setting"""""""""""""""""""""""      
 set cscopequickfix=s-,c-,d-,i-,t-,e-    
