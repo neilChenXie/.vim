@@ -14,7 +14,8 @@ Installation
 		use SyntasticInfo to check and search and solve
 ####YouCompleteMe: 
 		./install --clang-completer
-####tern_for_vim: npm install
+####tern_for_vim: 
+		npm install
 ####vim-cpp-enhanced
 ####vim-javascript-syntax
 
@@ -22,3 +23,14 @@ Installation
 ####taglist: 
 		~/.vim/plugin/taglist.vim  
 		~/.vim/doc/taglist.txt
+
+vimrc
+-----
+####Vundle
+	configuration
+####Pathogen
+	configuration
+####General
+	configuration
+####plugin
+	plugin specified configuration
