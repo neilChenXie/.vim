@@ -38,6 +38,9 @@ set showmatch
 set showcmd
 "helptags ~/.vim/doc
 
+""""""""""""""""""""NERDtree"""""""""""""""""""""""
+au VimEnter *  NERDTree
+
 """"""""""""""""""colorscheme""""""""""""""""""""""
 let g:solarized_termtrans = 1
 set background=dark
@@ -66,6 +69,7 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_auto_jump = 1
 "specific checker
 let g:syntastic_javascript_jshint_exec='/usr/local/lib/node_modules/jshint/bin/jshint'
+
 """""""""""""taglist setting"""""""""""""""""""""""
 map <F3> : Tlist<CR>
 let g:Tlist_Exit_OnlyWindow = 1
