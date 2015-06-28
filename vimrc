@@ -14,6 +14,7 @@ Plugin 'Valloric/YouCompleteMe' "YouCompleteMe
 Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'marijnh/tern_for_vim' " JS autocomplete
 Plugin 'jelera/vim-javascript-syntax' " highlights for JS
+Plugin 'scrooloose/nerdtree.git' "NERD file tree
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -68,7 +69,7 @@ let g:syntastic_javascript_jshint_exec='/usr/local/lib/node_modules/jshint/bin/j
 """""""""""""taglist setting"""""""""""""""""""""""
 map <F3> : Tlist<CR>
 let g:Tlist_Exit_OnlyWindow = 1
-let g:Tlist_Auto_Open = 1
+let g:Tlist_Auto_Open = 0
 let g:Tlist_Auto_Update = 1
 let g:Tlist_Compact_Format = 1
 

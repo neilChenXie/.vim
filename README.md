@@ -7,8 +7,9 @@ Installation
 
 ###1. install vundle & pathogen
 ###2. based on pathogen:
-####solarized
 ###3. based on vundle:
+####solarized
+####NERDtree
 ####syntastic
 		need to install node.js and npm install jshint, config path
 		use SyntasticInfo to check and search and solve
@@ -29,7 +30,7 @@ vimrc
 ####Vundle
 	configuration
 ####Pathogen
-	configuration
+	only one file under autoload
 ####General
 	configuration
 ####plugin
