@@ -1,3 +1,4 @@
+""""""""""""""""general setting"""""""""""""""""""
 """""""""""""""""vundle setting"""""""""""""""""""
 set nocompatible              " be iMproved, required
 filetype off                  " required
