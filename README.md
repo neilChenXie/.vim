@@ -8,8 +8,10 @@ Installation
 ###1. install vundle(needed) & pathogen(done)
 ###2. based on pathogen:
 ####solarized
+```bash
 		cd ~/.vim/bundle
 		git clone git://github.com/altercation/vim-colors-solarized.git
+```
 ###3. based on vundle:
 ####syntastic
 		need to install node.js and npm install jshint, config path
