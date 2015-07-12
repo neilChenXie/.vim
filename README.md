@@ -9,7 +9,7 @@ This document include my how to setup .vim configuration and experience of using
 
 ###.vim PATH:
 
-* `~/.vim/` for login usr./etc/vim/
+* `~/.vim/` for login user
 
 * `/etc/vim/` for all users
 
