@@ -1,4 +1,15 @@
 """"""""""""""""general setting"""""""""""""""""""
+syntax on
+set ruler
+set nu
+set autoindent
+set smartindent
+set shiftwidth=4
+set tabstop=4
+set showmatch
+set showcmd
+"helptags ~/.vim/doc
+
 """""""""""""""""vundle setting"""""""""""""""""""
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -26,18 +37,6 @@ filetype plugin indent on    " required
 execute pathogen#infect()
 filetype plugin indent on
 filetype plugin on
-
-"""""""""""""""general settings""""""""""""""""""""
-syntax on
-set ruler
-set nu
-set autoindent
-set smartindent 
-set shiftwidth=4
-set tabstop=4
-set showmatch
-set showcmd
-"helptags ~/.vim/doc
 
 """"""""""""""""""""NERDtree"""""""""""""""""""""""
 au VimEnter *  NERDTree
@@ -78,27 +77,27 @@ let g:Tlist_Auto_Open = 0
 let g:Tlist_Auto_Update = 1
 let g:Tlist_Compact_Format = 1
 
-""""""""""""""cscope setting"""""""""""""""""""""""      
-set cscopequickfix=s-,c-,d-,i-,t-,e-    
-if has("cscope")    
-	set csprg=/usr/bin/cscope    
-	set csto=1    
-	set cst    
-	set nocsverb    
-	" add any database in current directory     
-	if filereadable("cscope.out")    
-		cs add cscope.out    
-	endif    
-	set csverb    
-endif    
+""""""""""""""cscope setting"""""""""""""""""""""""
+set cscopequickfix=s-,c-,d-,i-,t-,e-
+if has("cscope")
+	set csprg=/usr/bin/cscope
+	set csto=1
+	set cst
+	set nocsverb
+	" add any database in current directory
+	if filereadable("cscope.out")
+		cs add cscope.out
+	endif
+	set csverb
+endif
 
-nmap <C-@>s :cs find s <C-R>=expand("<cword>")<CR><CR>  
-nmap <C-@>g :cs find g <C-R>=expand("<cword>")<CR><CR>  
-nmap <C-@>c :cs find c <C-R>=expand("<cword>")<CR><CR>  
-nmap <C-@>t :cs find t <C-R>=expand("<cword>")<CR><CR>  
-nmap <C-@>e :cs find e <C-R>=expand("<cword>")<CR><CR>  
-nmap <C-@>f :cs find f <C-R>=expand("<cfile>")<CR><CR>  
-nmap <C-@>i :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>  
+nmap <C-@>s :cs find s <C-R>=expand("<cword>")<CR><CR>
+nmap <C-@>g :cs find g <C-R>=expand("<cword>")<CR><CR>
+nmap <C-@>c :cs find c <C-R>=expand("<cword>")<CR><CR>
+nmap <C-@>t :cs find t <C-R>=expand("<cword>")<CR><CR>
+nmap <C-@>e :cs find e <C-R>=expand("<cword>")<CR><CR>
+nmap <C-@>f :cs find f <C-R>=expand("<cfile>")<CR><CR>
+nmap <C-@>i :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
 nmap <C-@>d :cs find d <C-R>=expand("<cword>")<CR><CR>
 
 """""""""""""phpfolding setting""""""""""""""""""""
