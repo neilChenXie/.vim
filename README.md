@@ -46,7 +46,8 @@ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ###2. Pathogen:
 
 * run plugin under `/bundle/`
-	>* solarized
+
+	* solarized
 
 * [reference](https://github.com/tpope/vim-pathogen)
 
@@ -69,8 +70,8 @@ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 * YouCompleteMe:
 	* install llvm and clang:
-
-		> add `llvm.list` to `/etc/apt/source.list.d/`
+		>Ubuntu relate [link](http://llvm.org/apt/)
+		add `llvm.list` to `/etc/apt/source.list.d/`
 		```bash
 		ln -s /usr/bin/clang /usr/bin/clang-3.6
 		ln -s /usr/bin/clang++ /usr/bin/clang++-3.6
@@ -85,6 +86,8 @@ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 * vim-cpp-enhanced
 
 * vim-javascript-syntax
+
+* [reference](https://github.com/VundleVim/Vundle.vim)
 
 ###4. separated:
 
