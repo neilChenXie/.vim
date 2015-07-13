@@ -3,7 +3,7 @@
 
 ##Description
 
-This document include my how to setup .vim configuration and experience of using vim.
+This document include how to setup .vim configuration and my experience of using vim.
 
 ##.vim/ setup
 
