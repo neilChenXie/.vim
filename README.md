@@ -22,13 +22,7 @@ This document include how to setup .vim configuration and my experience of using
 	cd ~/.vim
 	```
 
-2. Install vundle(needed) & pathogen(done)
-
-	```bash
-	git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-	```
-
-3. Pathogen:
+2. Pathogen(Done):
 
 	* run plugin under `/bundle/`
 
@@ -38,41 +32,50 @@ This document include how to setup .vim configuration and my experience of using
 
 3. Vundle:
 
-	* solarized
+	1. Install
 
-	* NERDtree
-
-	* syntastic
-
-		>**:SyntasticInfo** to check
-
-		>For javascript
-
-		>>need to install node.js, config path
 		```bash
-		npm install -g jshint
+		git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 		```
+		>then, run `PluginInstall` in vim
 
-	* YouCompleteMe:
-		>install llvm and clang:
+	2. Plugins
 
-		>Ubuntu relate [link](http://llvm.org/apt/)
-		```bash
-		ln -s /usr/bin/clang /usr/bin/clang-3.6
-		ln -s /usr/bin/clang++ /usr/bin/clang++-3.6
-		```
+		* Solarized
 
-		>`./install.sh --clang-completer` under `~/.vim/bundle/YouCompleteMe/`
+		* NERDtree
 
-	* tern_for_vim:
+		* syntastic
 
-		>`npm install` under `~/.vim/bundle/tern_for_vim/`
+			>**:SyntasticInfo** to check
 
-	* vim-cpp-enhanced
+			>For javascript
 
-	* vim-javascript-syntax
+			>>need to install node.js, config path
+			```bash
+			npm install -g jshint
+			```
 
-		> [reference](https://github.com/VundleVim/Vundle.vim)
+		* YouCompleteMe:
+			>install llvm and clang:
+
+			>Ubuntu relate [link](http://llvm.org/apt/)
+			```bash
+			ln -s /usr/bin/clang /usr/bin/clang-3.6
+			ln -s /usr/bin/clang++ /usr/bin/clang++-3.6
+			```
+
+			>`./install.sh --clang-completer` under `~/.vim/bundle/YouCompleteMe/`
+
+		* tern_for_vim:
+
+			>`npm install` under `~/.vim/bundle/tern_for_vim/`
+
+		* vim-cpp-enhanced
+
+		* vim-javascript-syntax
+
+			> [reference](https://github.com/VundleVim/Vundle.vim)
 
 4. separated:
 
