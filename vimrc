@@ -54,6 +54,7 @@ let g:ycm_min_num_of_chars_for_completion = 1
 "let g:ycm_error_symbol = '>>'
 "let g:ycm_warning_symbol = '>*'
 let g:ycm_show_diagnostics_ui = 0
+let g:ycm_autoclose_preview_window_after_completion = 1
 
 """"""""""""syntastic support C++11""""""""""""""""
 let g:syntastic_cpp_compiler_options = ' -std=c++0x'

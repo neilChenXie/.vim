@@ -89,6 +89,12 @@ This document include how to setup .vim configuration and my experience of using
 
 ##Command
 
+###control mode
+
+* reload
+
+	> :e
+
 ###search and replace:
 
 * Find each occurrence of 'foo' (in all lines), and replace it with 'bar'.
