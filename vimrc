@@ -41,6 +41,7 @@ filetype plugin on
 
 """"""""""""""""""""NERDtree"""""""""""""""""""""""
 au VimEnter *  NERDTree
+let g:NERDTreeWinSize=15
 
 """"""""""""""""""colorscheme""""""""""""""""""""""
 let g:solarized_termtrans = 1
