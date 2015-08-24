@@ -110,3 +110,5 @@ This document include how to setup .vim configuration and my experience of using
 * Change only whole words exactly matching 'foo' to 'bar'; ask for confirmation.
 
 	>`:%s/foo/bar/gci`
+
+* [reference](http://vim.wikia.com/wiki/Search_and_replace)

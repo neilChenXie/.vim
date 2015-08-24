@@ -28,6 +28,7 @@ Plugin 'marijnh/tern_for_vim' " JS autocomplete
 Plugin 'jelera/vim-javascript-syntax' " highlights for JS
 Plugin 'scrooloose/nerdtree.git' "NERD file tree
 Plugin 'scrooloose/nerdcommenter.git' "NERD commenter
+Plugin 'tpope/vim-surround' "Surround change
 
 call vundle#end()            " required
 filetype plugin indent on    " required
