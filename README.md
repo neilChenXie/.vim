@@ -45,6 +45,8 @@ This document include how to setup .vim configuration and my experience of using
 
 		* NERDtree
 
+		* NERDcommenter
+
 		* syntastic
 
 			>**:SyntasticInfo** to check
