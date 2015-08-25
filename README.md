@@ -7,6 +7,8 @@ This document include how to setup .vim configuration and my experience of using
 
 ##.vim/ setup
 
+need to install vim-gnome to support system clipboard
+
 ###.vim PATH:
 
 * `~/.vim/` for login user

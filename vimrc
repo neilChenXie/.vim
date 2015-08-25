@@ -1,3 +1,7 @@
+"""""""""""""""clipboard related"""""""""""""""""
+vmap <C-c> "+y
+nmap <C-c> "+yy
+nmap <C-v> "+p
 """""""""""""""auto closing map""""""""""""""""""
 imap ( ()<left>
 imap { {}<left>
