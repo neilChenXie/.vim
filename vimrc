@@ -2,13 +2,12 @@
 vmap <C-c> "+y
 nmap <C-c> "+yy
 vmap <C-v> "+p
-nmap <C-v> "+p
-"""""""""""""""auto closing map""""""""""""""""""
+""""""""""""""""auto closing map""""""""""""""""""
 imap ( ()<left>
 imap { {}<left>
 imap [ []<left>
-imap " ""<left>
-imap ''<left>
+imap " "<left>
+imap ' '<left>
 """"""""""""""""general setting"""""""""""""""""""
 syntax on
 set ruler
