@@ -1,6 +1,3 @@
-"""""""""""""""auto closing map""""""""""""""""""
-imap ( ()<left>
-imap { {}<left>
 """"""""""""""""general setting"""""""""""""""""""
 syntax on
 set ruler
@@ -30,8 +27,11 @@ Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'marijnh/tern_for_vim' " JS autocomplete
 Plugin 'jelera/vim-javascript-syntax' " highlights for JS
 Plugin 'scrooloose/nerdtree.git' "NERD file tree
+<<<<<<< HEAD
 Plugin 'scrooloose/nerdcommenter.git' "NERD commenter
+=======
 Plugin 'tpope/vim-surround' "Surround change
+>>>>>>> e1cafcfa461b4a03b70158658e44cb3b246e5465
 
 call vundle#end()            " required
 filetype plugin indent on    " required
