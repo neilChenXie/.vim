@@ -1,6 +1,7 @@
 """""""""""""""auto closing map""""""""""""""""""
 imap ( ()<left>
 imap { {}<left>
+imap [ []<left>
 """"""""""""""""general setting"""""""""""""""""""
 syntax on
 set ruler
