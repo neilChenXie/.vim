@@ -1,3 +1,4 @@
 *.[oa] *~
+.*.sw[po]
 
 /bundle/

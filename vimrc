@@ -2,12 +2,12 @@
 vmap <C-c> "+y
 nmap <C-c> "+yy
 vmap <C-v> "+p
+imap <C-v> <Esc>"+p<Esc>a
+imap <C-c> <Esc>"+yy<Esc>a
 """"""""""""""""auto closing map""""""""""""""""""
 imap ( ()<left>
 imap { {}<left>
 imap [ []<left>
-imap " "<left>
-imap ' '<left>
 """"""""""""""""general setting"""""""""""""""""""
 syntax on
 set ruler
@@ -53,6 +53,7 @@ filetype plugin on
 """"""""""""""""""""NERDtree"""""""""""""""""""""""
 au VimEnter *  NERDTree
 let g:NERDTreeWinSize=15
+let NERDTreeShowHidden=1
 
 """"""""""""""""""colorscheme""""""""""""""""""""""
 let g:solarized_termtrans = 1
