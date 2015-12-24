@@ -4,12 +4,13 @@ nmap <C-c> "+yy
 vmap <C-v> "+p
 imap <C-v> <Esc>"+p<Esc>a
 imap <C-c> <Esc>"+yy<Esc>a
-""""""""""""""""auto closing map""""""""""""""""""
-imap ( ()<left>
-imap { {}<left>
-imap [ []<left>
+"""""""""""""""""auto closing map""""""""""""""""""
+"imap ( ()<left>
+"imap { {}<left>
+"imap [ []<left>
 """"""""""""""""general setting"""""""""""""""""""
 syntax on
+au BufNewFile,BufRead *.ejs set filetype=html
 set ruler
 set nu
 set autoindent
