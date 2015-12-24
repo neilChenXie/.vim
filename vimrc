@@ -40,6 +40,8 @@ Plugin 'scrooloose/nerdtree.git' "NERD file tree
 Plugin 'scrooloose/nerdcommenter.git' "NERD commenter
 Plugin 'tpope/vim-surround' "Surround change
 
+Plugin 'digitaltoad/vim-jade' "node-jade highlight
+
 call vundle#end()            " required
 filetype plugin indent on    " required
 
