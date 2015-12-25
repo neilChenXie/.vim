@@ -1,26 +1,3 @@
-"""""""""""""""clipboard related"""""""""""""""""
-vmap <C-c> "+y
-nmap <C-c> "+yy
-vmap <C-v> "+p
-imap <C-v> <Esc>"+p<Esc>a
-imap <C-c> <Esc>"+yy<Esc>a
-"""""""""""""""""auto closing map""""""""""""""""""
-"imap ( ()<left>
-"imap { {}<left>
-"imap [ []<left>
-""""""""""""""""general setting"""""""""""""""""""
-syntax on
-au BufNewFile,BufRead *.ejs set filetype=html
-set ruler
-set nu
-set autoindent
-set smartindent
-set shiftwidth=4
-set tabstop=4
-set showmatch
-set showcmd
-"helptags ~/.vim/doc
-
 """""""""""""""""vundle setting"""""""""""""""""""
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -40,7 +17,6 @@ Plugin 'jelera/vim-javascript-syntax' " highlights for JS
 Plugin 'scrooloose/nerdtree.git' "NERD file tree
 Plugin 'scrooloose/nerdcommenter.git' "NERD commenter
 Plugin 'tpope/vim-surround' "Surround change
-
 Plugin 'digitaltoad/vim-jade' "node-jade highlight
 
 call vundle#end()            " required
@@ -52,6 +28,27 @@ filetype plugin indent on    " required
 execute pathogen#infect()
 filetype plugin indent on
 filetype plugin on
+set encoding=utf-8
+set fileencoding=utf-8
+
+"""""""""""""""clipboard related"""""""""""""""""
+vmap <C-c> "+y
+nmap <C-c> "+yy
+vmap <C-v> "+p
+imap <C-v> <Esc>"+p<Esc>a
+imap <C-c> <Esc>"+yy<Esc>a
+""""""""""""""""general setting"""""""""""""""""""
+syntax on
+au BufNewFile,BufRead *.ejs set filetype=html
+set ruler
+set nu
+set autoindent
+set smartindent
+set shiftwidth=4
+set tabstop=4
+set showmatch
+set showcmd
+helptags ~/.vim/doc
 
 """"""""""""""""""""NERDtree"""""""""""""""""""""""
 au VimEnter *  NERDTree
