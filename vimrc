@@ -6,18 +6,22 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-"plugin for vundle to install and manage
+"No More Operation
 Plugin 'gmarik/Vundle.vim' " let Vundle manage Vundle, required
 Plugin 'altercation/vim-colors-solarized.git' "solarized
 Plugin 'scrooloose/syntastic'	"syntastic
-Plugin 'Valloric/YouCompleteMe' "YouCompleteMe
 Plugin 'octol/vim-cpp-enhanced-highlight'
-Plugin 'marijnh/tern_for_vim' " JS autocomplete
 Plugin 'jelera/vim-javascript-syntax' " highlights for JS
 Plugin 'scrooloose/nerdtree.git' "NERD file tree
 Plugin 'scrooloose/nerdcommenter.git' "NERD commenter
 Plugin 'tpope/vim-surround' "Surround change
 Plugin 'digitaltoad/vim-jade' "node-jade highlight
+Plugin 'severin-lemaignan/vim-minimap' "mini-map
+Plugin 'othree/javascript-libraries-syntax.vim' "JS Lib Syntax
+
+"Need Operation
+Plugin 'Valloric/YouCompleteMe' "YouCompleteMe
+Plugin 'marijnh/tern_for_vim' " JS autocomplete
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -48,6 +52,8 @@ set shiftwidth=4
 set tabstop=4
 set showmatch
 set showcmd
+set hlsearch
+map <F12> :nohlsearch<CR>
 helptags ~/.vim/doc
 
 """"""""""""""""""""NERDtree"""""""""""""""""""""""
@@ -86,7 +92,7 @@ let g:syntastic_auto_jump = 1
 let g:syntastic_javascript_jshint_exec='/usr/local/lib/node_modules/jshint/bin/jshint'
 
 """""""""""""taglist setting"""""""""""""""""""""""
-map <F3> : Tlist<CR>
+map <F4> : Tlist<CR>
 let g:Tlist_Exit_OnlyWindow = 1
 let g:Tlist_Auto_Open = 0
 let g:Tlist_Auto_Update = 1
@@ -120,5 +126,26 @@ map <F5> <Esc>:EnableFastPHPFolds<Cr>
 map <F6> <Esc>:EnablePHPFolds<Cr>
 map <F7> <Esc>:DisablePHPFolds<Cr>
 
+""""""""""""" minimap """"""""""""""""""""""""""""
+map <F2> <Esc>:Minimap<Cr>
+map <F3> <Esc>:MinimapClose<Cr>
+let g:minimap_highlight='Visual'
+
 """""""""""""javascript folding""""""""""""""""""""
 "au FileType javascript call JavaScriptFold()
+
+"""""""""""javascript lib syntax""""""""""""""""""
+autocmd BufReadPre *.js let b:javascript_lib_use_jquery = 1
+autocmd BufReadPre *.js let b:javascript_lib_use_underscore = 0 "underscore, Lo-Dash
+autocmd BufReadPre *.js let b:javascript_lib_use_backbone = 0 "backbone
+autocmd BufReadPre *.js let b:javascript_lib_use_prelude = 0 "prelude
+autocmd BufReadPre *.js let b:javascript_lib_use_angularjs = 0 "angularjs
+autocmd BufReadPre *.js let b:javascript_lib_use_angularui = 0 "angularui
+autocmd BufReadPre *.js let b:javascript_lib_use_angularuirouter = 0 "angularuirouter
+autocmd BufReadPre *.js let b:javascript_lib_use_react = 0 "react
+autocmd BufReadPre *.js let b:javascript_lib_use_flux = 0 "flux
+autocmd BufReadPre *.js let b:javascript_lib_use_requirejs = 0 "requirejs
+autocmd BufReadPre *.js let b:javascript_lib_use_sugar = 0 "sugar
+autocmd BufReadPre *.js let b:javascript_lib_use_jasmine = 0 "jasmine
+autocmd BufReadPre *.js let b:javascript_lib_use_chai = 0 "chai
+autocmd BufReadPre *.js let b:javascript_lib_use_handlebars = 0 "handlebars
