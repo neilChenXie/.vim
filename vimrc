@@ -57,9 +57,11 @@ map <F12> :nohlsearch<CR>
 helptags ~/.vim/doc
 
 """"""""""""""""""""NERDtree"""""""""""""""""""""""
-au VimEnter *  NERDTree
+"au VimEnter *  NERDTree
 let g:NERDTreeWinSize=15
 let NERDTreeShowHidden=1
+map <F8> <Esc>:NERDTree<Cr>
+map <F9> <Esc>:NERDTreeClose<Cr>
 
 """"""""""""""""""colorscheme""""""""""""""""""""""
 let g:solarized_termtrans = 1
