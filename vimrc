@@ -1,3 +1,5 @@
+"""""""""""""""" for eclipse """"""""""""""""""
+set nocompatible
 """""""""""""""clipboard related"""""""""""""""""
 vmap <C-c> "+y
 nmap <C-c> "+yy
