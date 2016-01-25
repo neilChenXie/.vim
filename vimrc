@@ -151,3 +151,5 @@ autocmd BufReadPre *.js let b:javascript_lib_use_sugar = 0 "sugar
 autocmd BufReadPre *.js let b:javascript_lib_use_jasmine = 0 "jasmine
 autocmd BufReadPre *.js let b:javascript_lib_use_chai = 0 "chai
 autocmd BufReadPre *.js let b:javascript_lib_use_handlebars = 0 "handlebars
+""""""""""""""""""eclim completion""""""""""""""""""
+let g:EclimCompletionMethod = 'omnifunc'
