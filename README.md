@@ -9,6 +9,12 @@ This document include how to setup .vim configuration and my experience of using
 
 need to install vim-gnome to support system clipboard
 
+### For Windows
+
+1. put under `C:\User\neil_xie\vimfiles`
+2. **vimrc** `set rtp+=$HOME/vimfiles/bundle/Vundle.vim`
+
+
 ###.vim PATH:
 
 * `~/.vim/` for login user
