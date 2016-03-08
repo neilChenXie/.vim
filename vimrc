@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 """""""""""""""""""""vundle setting""""""""""""""""""""""""""""""
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -176,4 +174,3 @@ autocmd BufReadPre *.js let b:javascript_lib_use_handlebars = 0 "handlebars
 """""""""""""""""""external support""""""""""""""""""
 ""eclim completion""
 "let g:EclimCompletionMethod = 'omnifunc'
->>>>>>> 9cf9007dcb8cd2c8262709bd1fca1a7e04255e51
