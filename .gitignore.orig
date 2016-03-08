@@ -1,0 +1,13 @@
+*.[oa] *~
+.*.sw[po]
+*.bak
+
+/bundle/
+<<<<<<< HEAD
+
+# Eclim
+/eclim/
+eclim.vim
+=======
+/eclim/
+>>>>>>> 9cf9007dcb8cd2c8262709bd1fca1a7e04255e51
