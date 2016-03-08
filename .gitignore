@@ -3,3 +3,7 @@
 *.bak
 
 /bundle/
+
+# Eclim
+/eclim/
+eclim.vim
