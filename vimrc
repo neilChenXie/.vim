@@ -45,9 +45,9 @@ filetype plugin indent on    " required
 set encoding=utf-8
 set fileencoding=utf-8
 " support Windows Chinese
-set termencoding=gbk
-set langmenu=zh_CN.UTF-8
-language messages zh_CN.UTF-8
+" set termencoding=gbk
+" set langmenu=zh_CN.UTF-8
+" language messages zh_CN.UTF-8
 
 """""""""""""""clipboard related"""""""""""""""""
 vmap <C-c> "+y
