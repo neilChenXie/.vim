@@ -1,17 +1,26 @@
+# vim
 
-#vim
+## Description
 
-##Description
+1. .vim settings
+2. command
 
-This document include how to setup .vim configuration and my experience of using vim.
-
-##.vim/ setup
+## .vim/ setup
 
 need to install vim-gnome to support system clipboard
 
-### For Windows
+### Check ENV
 
-1. put under `C:\User\neil_xie\vimfiles`
+* inside vim
+
+	```sh
+	# 1 is required, 0 need to follow tutorial under vim-compile
+	:echo has('lua')
+	```
+
+### Windows
+
+1. put under `C:\User\{username}\vimfiles`
 2. **vimrc** `set rtp+=$HOME/vimfiles/bundle/Vundle.vim`
 
 
@@ -43,80 +52,63 @@ need to install vim-gnome to support system clipboard
 	1. Install
 
 		```bash
+		#Linux
 		git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 		```
-		>then, run `PluginInstall` in vim
 
-	2. Plugins
+		Then `:PluginInstall` **inside vim**
 
-		* Solarized
-
-		* NERDtree
-
-		* NERDcommenter
+	2. Plugins(Operation needed only)
 
 		* syntastic
 
-			>**:SyntasticInfo** to check
-
-			>For javascript
-
-			>>need to install node.js, config path
 			```bash
+			# to check, inside vim
+			:SyntasticInfo
+
+			# For javascript
+			# need to install node.js, config path
 			npm install -g jshint
 			```
 
-		* YouCompleteMe:
-			>install llvm and clang:
+		* Neocomplete:
 
-			>Ubuntu relate [link](http://llvm.org/apt/)
-			```bash
-			ln -s /usr/bin/clang /usr/bin/clang-3.6
-			ln -s /usr/bin/clang++ /usr/bin/clang++-3.6
-			```
+			* **Prerequsite**: vim with **lua**
 
-			>`./install.sh --clang-completer` under `~/.vim/bundle/YouCompleteMe/`
+			* Check
 
-		* tern_for_vim:
-
-			>`npm install` under `~/.vim/bundle/tern_for_vim/`
-
-		* vim-cpp-enhanced
-
-		* vim-javascript-syntax
-
-			> [reference](https://github.com/VundleVim/Vundle.vim)
+				`:echo has("lua")` **inside vim**
 
 4. separated:
 
-	* taglist(done):
+	* {prefix}/plugin/:
+		* taglist(done)
+		* winmanager(done)
+	* {prefix}/fplugin/:
+		* phpfolding(done)
+	* install:
+		* cscope
 
-		> ~/.vim/plugin/taglist.vim<br>
-		~/.vim/doc/taglist.txt<br>
-		[reference](http://www.vim.org/scripts/script.php?script_id=273)
+## Command
 
-###vimrc
-
-##Command
-
-###control mode
+### control mode
 
 * reload
 
-	> :e
+	`:e`
 
-###search and replace:
+### search and replace:
 
 * Find each occurrence of 'foo' (in all lines), and replace it with 'bar'.
 
-    >`:%s/foo/bar/g`
+    `:%s/foo/bar/g`
 
 * Find each occurrence of 'foo' (in the current line only), and replace it with 'bar'.
 
-	>`:s/foo/bar/g`
+	`:s/foo/bar/g`
 
 * Change only whole words exactly matching 'foo' to 'bar'; ask for confirmation.
 
-	>`:%s/foo/bar/gci`
+	`:%s/foo/bar/gci`
 
 * [reference](http://vim.wikia.com/wiki/Search_and_replace)

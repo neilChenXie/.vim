@@ -13,6 +13,8 @@ Plugin 'gmarik/Vundle.vim' " let Vundle manage Vundle, required
 Plugin 'scrooloose/nerdtree.git' "NERD file tree
 Plugin 'severin-lemaignan/vim-minimap' "mini-map
 Plugin 'altercation/vim-colors-solarized.git' "solarized
+Plugin 'vim-airline/vim-airline' "beautiful airline
+Plugin 'vim-airline/vim-airline-themes' "airline-theme
 
 """Functionality"""
 ""No Operation""
@@ -74,8 +76,8 @@ helptags ~/.vim/doc
 "au VimEnter *  NERDTree
 let g:NERDTreeWinSize=15
 let NERDTreeShowHidden=1
-map <F8> <Esc>:NERDTree<Cr>
-map <F9> <Esc>:NERDTreeClose<Cr>
+"map <F8> <Esc>:NERDTree<Cr>
+"map <F9> <Esc>:NERDTreeClose<Cr>
 
 ""minimap""
 map <F2> <Esc>:Minimap<Cr>
@@ -87,6 +89,16 @@ let g:solarized_termtrans = 1
 set background=dark
 syntax enable
 colorscheme solarized
+
+""airline""
+let g:airline#extensions#tabline#enabled = 1
+"airline theme"
+let &t_Co=256
+
+""winmanager""
+let g:winManagerWindowLayout='TagList|FileExplorer'
+let g:AutoOpenWinManager = 1
+nmap <silent> <F8> :WMToggle<cr>
 
 """""""""""functionality module setting"""""""""""""
 ""neocomplete""
@@ -118,20 +130,21 @@ let g:Tlist_Exit_OnlyWindow = 1
 let g:Tlist_Auto_Open = 0
 let g:Tlist_Auto_Update = 1
 let g:Tlist_Compact_Format = 1
+let g:Tlist_File_Fold_Auto_Close=1
 
 ""cscope setting""
-set cscopequickfix=s-,c-,d-,i-,t-,e-
-if has("cscope")
-	set csprg=/usr/bin/cscope
-	set csto=1
-	set cst
-	set nocsverb
-	" add any database in current directory
-	if filereadable("cscope.out")
-		cs add cscope.out
-	endif
-	set csverb
-endif
+"set cscopequickfix=s-,c-,d-,i-,t-,e-
+"if has("cscope")
+"	set csprg=/usr/bin/cscope
+"	set csto=1
+"	set cst
+"	set nocsverb
+"	" add any database in current directory
+"	if filereadable("cscope.out")
+"		cs add cscope.out
+"	endif
+"	set csverb
+"endif
 
 "nmap <C-@>s :cs find s <C-R>=expand("<cword>")<CR><CR>
 "nmap <C-@>g :cs find g <C-R>=expand("<cword>")<CR><CR>
@@ -154,22 +167,23 @@ map <F7> <Esc>:DisablePHPFolds<Cr>
 
 """"""""""""""""""language support""""""""""""""""""
 ""ejs support""
-au BufNewFile,BufRead *.ejs set filetype=html
+"au BufNewFile,BufRead *.ejs set filetype=html
+
 ""javascript lib syntax""
-autocmd BufReadPre *.js let b:javascript_lib_use_jquery = 1
-autocmd BufReadPre *.js let b:javascript_lib_use_underscore = 0 "underscore, Lo-Dash
-autocmd BufReadPre *.js let b:javascript_lib_use_backbone = 0 "backbone
-autocmd BufReadPre *.js let b:javascript_lib_use_prelude = 0 "prelude
-autocmd BufReadPre *.js let b:javascript_lib_use_angularjs = 0 "angularjs
-autocmd BufReadPre *.js let b:javascript_lib_use_angularui = 0 "angularui
-autocmd BufReadPre *.js let b:javascript_lib_use_angularuirouter = 0 "angularuirouter
-autocmd BufReadPre *.js let b:javascript_lib_use_react = 0 "react
-autocmd BufReadPre *.js let b:javascript_lib_use_flux = 0 "flux
-autocmd BufReadPre *.js let b:javascript_lib_use_requirejs = 0 "requirejs
-autocmd BufReadPre *.js let b:javascript_lib_use_sugar = 0 "sugar
-autocmd BufReadPre *.js let b:javascript_lib_use_jasmine = 0 "jasmine
-autocmd BufReadPre *.js let b:javascript_lib_use_chai = 0 "chai
-autocmd BufReadPre *.js let b:javascript_lib_use_handlebars = 0 "handlebars
+"autocmd BufReadPre *.js let b:javascript_lib_use_jquery = 1
+"autocmd BufReadPre *.js let b:javascript_lib_use_underscore = 0 "underscore, Lo-Dash
+"autocmd BufReadPre *.js let b:javascript_lib_use_backbone = 0 "backbone
+"autocmd BufReadPre *.js let b:javascript_lib_use_prelude = 0 "prelude
+"autocmd BufReadPre *.js let b:javascript_lib_use_angularjs = 0 "angularjs
+"autocmd BufReadPre *.js let b:javascript_lib_use_angularui = 0 "angularui
+"autocmd BufReadPre *.js let b:javascript_lib_use_angularuirouter = 0 "angularuirouter
+"autocmd BufReadPre *.js let b:javascript_lib_use_react = 0 "react
+"autocmd BufReadPre *.js let b:javascript_lib_use_flux = 0 "flux
+"autocmd BufReadPre *.js let b:javascript_lib_use_requirejs = 0 "requirejs
+"autocmd BufReadPre *.js let b:javascript_lib_use_sugar = 0 "sugar
+"autocmd BufReadPre *.js let b:javascript_lib_use_jasmine = 0 "jasmine
+"autocmd BufReadPre *.js let b:javascript_lib_use_chai = 0 "chai
+"autocmd BufReadPre *.js let b:javascript_lib_use_handlebars = 0 "handlebars
 
 """""""""""""""""""external support""""""""""""""""""
 ""eclim completion""
