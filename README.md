@@ -39,15 +39,7 @@ need to install vim-gnome to support system clipboard
 	cd ~/.vim
 	```
 
-2. Pathogen(Done):
-
-	* run plugin under `/bundle/`
-
-		> solarized
-
-	* [reference](https://github.com/tpope/vim-pathogen)
-
-3. Vundle:
+2. Vundle:
 
 	1. Install
 
@@ -79,15 +71,16 @@ need to install vim-gnome to support system clipboard
 
 				`:echo has("lua")` **inside vim**
 
-4. separated:
+3. separated:
 
+	* `apt-get` `yum` install:
+		* cscope
+		* ctags
 	* {prefix}/plugin/:
 		* taglist(done)
 		* winmanager(done)
 	* {prefix}/fplugin/:
 		* phpfolding(done)
-	* install:
-		* cscope
 
 ## Command
 
