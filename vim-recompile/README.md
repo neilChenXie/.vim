@@ -42,7 +42,7 @@ Make it complete with my experience growth
     sudo make install
     ```
 
-## Compile
+## Compile&Install
 
 * Failure: check **Bug** section, **Google** it if not there.
 
@@ -57,6 +57,8 @@ Make it complete with my experience growth
 
 # Explanation
 ## --prefix where to install
+make
+sudo make install
 ```
 
 ## Bug
