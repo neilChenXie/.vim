@@ -96,7 +96,7 @@ let g:airline#extensions#tabline#enabled = 1
 let &t_Co=256
 
 ""winmanager""
-let g:winManagerWindowLayout='TagList|FileExplorer'
+let g:winManagerWindowLayout='FileExplorer|TagList'
 let g:AutoOpenWinManager = 1
 nmap <silent> <F8> :WMToggle<cr>
 
