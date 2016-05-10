@@ -11,7 +11,7 @@ Plugin 'gmarik/Vundle.vim' " let Vundle manage Vundle, required
 
 """View"""
 Plugin 'scrooloose/nerdtree.git' "NERD file tree
-Plugin 'severin-lemaignan/vim-minimap' "mini-map
+"Plugin 'severin-lemaignan/vim-minimap' "mini-map
 Plugin 'altercation/vim-colors-solarized.git' "solarized
 Plugin 'vim-airline/vim-airline' "beautiful airline
 Plugin 'vim-airline/vim-airline-themes' "airline-theme
@@ -33,6 +33,7 @@ Plugin 'digitaltoad/vim-jade' "node-jade highlight
 "Need Operation
 "Plugin 'Valloric/YouCompleteMe' "YouCompleteMe
 "Plugin 'marijnh/tern_for_vim' " JS autocomplete
+
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -80,9 +81,9 @@ let NERDTreeShowHidden=1
 "map <F9> <Esc>:NERDTreeClose<Cr>
 
 ""minimap""
-map <F2> <Esc>:Minimap<Cr>
-map <F3> <Esc>:MinimapClose<Cr>
-let g:minimap_highlight='Visual'
+"map <F2> <Esc>:Minimap<Cr>
+"map <F3> <Esc>:MinimapClose<Cr>
+"let g:minimap_highlight='Visual'
 
 ""colorscheme""
 let g:solarized_termtrans = 1

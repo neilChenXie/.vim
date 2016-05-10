@@ -11,18 +11,9 @@ need to install vim-gnome to support system clipboard
 
 ### Check ENV
 
-* inside vim
+lua(Neocomplete)
 
-	```sh
-	# 1 is required, 0 need to follow tutorial under vim-compile
-	:echo has('lua')
-	```
-
-### Windows
-
-1. put under `C:\User\{username}\vimfiles`
-2. **vimrc** `set rtp+=$HOME/vimfiles/bundle/Vundle.vim`
-
+> `:echo has('lua')`
 
 ###.vim PATH:
 
@@ -39,7 +30,18 @@ need to install vim-gnome to support system clipboard
 	cd ~/.vim
 	```
 
-2. Vundle:
+2. Separated:
+
+	* `apt-get` `yum` install:
+		* cscope
+		* ctags
+	* {prefix}/plugin/:
+		* taglist(done)
+		* winmanager(done)
+	* {prefix}/fplugin/:
+		* phpfolding(done)
+
+3. Vundle:
 
 	1. Install
 
@@ -52,56 +54,57 @@ need to install vim-gnome to support system clipboard
 
 	2. Plugins(Operation needed only)
 
-		* syntastic
+		* Syntastic
 
-			```bash
-			# to check, inside vim
-			:SyntasticInfo
+			* Check
+				>`:SyntasticInfo` **inside vim**
 
-			# For javascript
-			# need to install node.js, config path
-			npm install -g jshint
-			```
+			* Plugins
+
+				```bash
+				# For javascript
+				# need to install node.js, config path
+				npm install -g jshint
+				```
 
 		* Neocomplete:
 
-			* **Prerequsite**: vim with **lua**
+			* **Prerequsite** 
+
+				>vim with **lua**
 
 			* Check
 
-				`:echo has("lua")` **inside vim**
+				>`:echo has("lua")` **inside vim**
 
-3. separated:
-
-	* `apt-get` `yum` install:
-		* cscope
-		* ctags
-	* {prefix}/plugin/:
-		* taglist(done)
-		* winmanager(done)
-	* {prefix}/fplugin/:
-		* phpfolding(done)
 
 ## Command
 
 ### control mode
 
-* reload
+reload
 
-	`:e`
+> `:e`
 
 ### search and replace:
 
-* Find each occurrence of 'foo' (in all lines), and replace it with 'bar'.
+Find each occurrence of 'foo' (in all lines), and replace it with 'bar'.
 
-    `:%s/foo/bar/g`
+> `:%s/foo/bar/g`
 
-* Find each occurrence of 'foo' (in the current line only), and replace it with 'bar'.
+Find each occurrence of 'foo' (in the current line only), and replace it with 'bar'.
 
-	`:s/foo/bar/g`
+> `:s/foo/bar/g`
 
-* Change only whole words exactly matching 'foo' to 'bar'; ask for confirmation.
+Change only whole words exactly matching 'foo' to 'bar'; ask for confirmation.
 
-	`:%s/foo/bar/gci`
+> `:%s/foo/bar/gci`
 
 * [reference](http://vim.wikia.com/wiki/Search_and_replace)
+
+## Windows
+
+1. put under `C:\User\{username}\vimfiles`
+2. install vundle with windows
+3. revise **vimrc** 
+	1. `set rtp+=$HOME/vimfiles/bundle/Vundle.vim`
