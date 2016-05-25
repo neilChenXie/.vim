@@ -58,6 +58,7 @@ nmap <C-c> "+yy
 vmap <C-v> "+p
 imap <C-v> <Esc>"+p<Esc>a
 imap <C-c> <Esc>"+yy<Esc>a
+
 """"""""""""""""general setting"""""""""""""""""""
 syntax on
 set ruler
@@ -77,12 +78,10 @@ helptags ~/.vim/doc
 "au VimEnter *  NERDTree
 let g:NERDTreeWinSize=15
 let NERDTreeShowHidden=1
-"map <F8> <Esc>:NERDTree<Cr>
-"map <F9> <Esc>:NERDTreeClose<Cr>
+map <F2> <Esc>:NERDTreeToggle<Cr>
 
-"minimap""
-map <F2> <Esc>:Minimap<Cr>
-map <F3> <Esc>:MinimapClose<Cr>
+""minimap""
+map <F4> <Esc>:MinimapToggle<Cr>
 let g:minimap_highlight='Visual'
 
 ""colorscheme""
@@ -99,7 +98,7 @@ let &t_Co=256
 ""winmanager""
 let g:winManagerWindowLayout='FileExplorer|TagList'
 let g:AutoOpenWinManager = 1
-nmap <silent> <F8> :WMToggle<cr>
+nmap <silent> <F10> :WMToggle<cr>
 
 """""""""""functionality module setting"""""""""""""
 ""neocomplete""
@@ -126,7 +125,7 @@ let g:syntastic_auto_jump = 1 "auto jump to error
 let g:syntastic_javascript_jshint_exec='/usr/local/lib/node_modules/jshint/bin/jshint'
 
 ""taglist setting""
-map <F4> : Tlist<CR>
+map <F3> : Tlist<CR>
 let g:Tlist_Exit_OnlyWindow = 1
 let g:Tlist_Auto_Open = 0
 let g:Tlist_Auto_Update = 1
@@ -156,20 +155,15 @@ let g:Tlist_File_Fold_Auto_Close=1
 "nmap <C-@>i :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
 "nmap <C-@>d :cs find d <C-R>=expand("<cword>")<CR><CR>
 
-""phpfolding setting""
-map <F5> <Esc>:EnableFastPHPFolds<Cr>
-map <F6> <Esc>:EnablePHPFolds<Cr>
-map <F7> <Esc>:DisablePHPFolds<Cr>
 
 
-""javascript folding""
-"au FileType javascript call JavaScriptFold()
+""""""""""""""""""language related""""""""""""""""""
 
-
-""""""""""""""""""language support""""""""""""""""""
+" XML 
 ""ejs support""
 "au BufNewFile,BufRead *.ejs set filetype=html
 
+" JavaScript
 ""javascript lib syntax""
 "autocmd BufReadPre *.js let b:javascript_lib_use_jquery = 1
 "autocmd BufReadPre *.js let b:javascript_lib_use_underscore = 0 "underscore, Lo-Dash
@@ -185,6 +179,17 @@ map <F7> <Esc>:DisablePHPFolds<Cr>
 "autocmd BufReadPre *.js let b:javascript_lib_use_jasmine = 0 "jasmine
 "autocmd BufReadPre *.js let b:javascript_lib_use_chai = 0 "chai
 "autocmd BufReadPre *.js let b:javascript_lib_use_handlebars = 0 "handlebars
+
+""javascript folding""
+"au FileType javascript call JavaScriptFold()
+
+" PHP
+""phpfolding setting""
+"map <F5> <Esc>:EnableFastPHPFolds<Cr>
+"map <F6> <Esc>:EnablePHPFolds<Cr>
+"map <F7> <Esc>:DisablePHPFolds<Cr>
+
+
 
 """""""""""""""""""external support""""""""""""""""""
 ""eclim completion""
