@@ -82,8 +82,8 @@ let NERDTreeShowHidden=1
 map <F2> <Esc>:NERDTreeToggle<Cr>
 
 ""minimap""
-map <F4> <Esc>:MinimapToggle<Cr>
-let g:minimap_highlight='Visual'
+"map <F4> <Esc>:MinimapToggle<Cr>
+"let g:minimap_highlight='Visual'
 
 ""colorscheme""
 "let g:solarized_termtrans = 1
