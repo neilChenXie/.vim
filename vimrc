@@ -12,6 +12,7 @@ Plugin 'gmarik/Vundle.vim' " let Vundle manage Vundle, required
 """View"""
 Plugin 'scrooloose/nerdtree.git' "NERD file tree
 Plugin 'altercation/vim-colors-solarized.git' "solarized
+Plugin 'sickill/vim-monokai' "monokai
 Plugin 'severin-lemaignan/vim-minimap' "mini-map
 Plugin 'vim-airline/vim-airline' "beautiful airline
 Plugin 'vim-airline/vim-airline-themes' "airline-theme
@@ -85,10 +86,11 @@ map <F4> <Esc>:MinimapToggle<Cr>
 let g:minimap_highlight='Visual'
 
 ""colorscheme""
-let g:solarized_termtrans = 1
-set background=dark
-syntax enable
-colorscheme solarized
+"let g:solarized_termtrans = 1
+"set background=dark
+"syntax enable
+"colorscheme solarized
+colorscheme monokai
 
 ""airline""
 let g:airline#extensions#tabline#enabled = 1
