@@ -81,14 +81,15 @@ let NERDTreeShowHidden=1
 map <F2> <Esc>:NERDTreeToggle<Cr>
 
 ""minimap""
-map <F4> <Esc>:MinimapToggle<Cr>
-let g:minimap_highlight='Visual'
+"map <F4> <Esc>:MinimapToggle<Cr>
+"let g:minimap_highlight='Visual'
 
 ""colorscheme""
-let g:solarized_termtrans = 1
-set background=dark
-syntax enable
-colorscheme solarized
+"let g:solarized_termtrans = 1
+"set background=dark
+"syntax enable
+"colorscheme solarized
+colorscheme monokai
 
 ""airline""
 let g:airline#extensions#tabline#enabled = 1
