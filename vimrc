@@ -11,8 +11,9 @@ Plugin 'gmarik/Vundle.vim' " let Vundle manage Vundle, required
 
 """View"""
 Plugin 'scrooloose/nerdtree.git' "NERD file tree
-Plugin 'severin-lemaignan/vim-minimap' "mini-map
 Plugin 'altercation/vim-colors-solarized.git' "solarized
+Plugin 'sickill/vim-monokai' "monokai
+Plugin 'severin-lemaignan/vim-minimap' "mini-map
 Plugin 'vim-airline/vim-airline' "beautiful airline
 Plugin 'vim-airline/vim-airline-themes' "airline-theme
 
