@@ -2,109 +2,98 @@
 
 ## Description
 
-1. .vim settings
-2. command
+.vim settings
 
-## .vim/ setup
+## Install
 
-need to install vim-gnome to support system clipboard
+1 Get .vim_v2
 
-### Check ENV
-
-lua(Neocomplete)
-
-> `:echo has('lua')`
-
-###.vim PATH:
-
-* `~/.vim/` for login user
-
-* `/etc/vim/` for all users
-
-###Steps
-
-1. Get .vim_v2
-
-	```bash
-	git clone https://github.com/neilChenXie/.vim_v2.git ~/.vim
-	cd ~/.vim
-	```
-
-2. Separated:
-
-	* `apt-get` `yum` install:
-		* cscope
-		* ctags
-	* {prefix}/plugin/:
-		* taglist(done)
-		* winmanager(done)
-	* {prefix}/fplugin/:
-		* phpfolding(done)
-
-3. Vundle:
-
-	1. Install
-
-		```bash
-		#Linux
-		git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-		```
-
-		Then `:PluginInstall` **inside vim**
-
-	2. Plugins(Operation needed only)
-
-		* Syntastic
-
-			* Check
-				>`:SyntasticInfo` **inside vim**
-
-			* Plugins
-
-				```bash
-				# For javascript
-				# need to install node.js, config path
-				npm install -g jshint
-				```
-
-		* Neocomplete:
-
-			* **Prerequsite** 
-
-				>vim with **lua**
-
-			* Check
-
-				>`:echo has("lua")` **inside vim**
+```bash
+git clone https://github.com/neilChenXie/.vim_v2.git ~/.vim
+cd ~/.vim
+```
 
 
-## Command
+2 Install Vundle:
 
-### control mode
 
-reload
+```bash
+#Linux
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+```
 
-> `:e`
+3 Install Plugins
 
-### search and replace:
+```bash
+vim
+# no problem with some warnings.
+## this is because, plugins are not installed yet
 
-Find each occurrence of 'foo' (in all lines), and replace it with 'bar'.
+# Inside vim
+:PluginInstall
+```
 
-> `:%s/foo/bar/g`
+### Non-vundle & installed app list
 
-Find each occurrence of 'foo' (in the current line only), and replace it with 'bar'.
+`~/.vim/plugin/`:
 
-> `:s/foo/bar/g`
+* taglist(done)
+* winmanager(done)
 
-Change only whole words exactly matching 'foo' to 'bar'; ask for confirmation.
+`~/.vim/fplugin/`:
 
-> `:%s/foo/bar/gci`
+* phpfolding(done)
 
-* [reference](http://vim.wikia.com/wiki/Search_and_replace)
+## Other Install needed
 
-## Windows
+> some software are needed
+
+cscope & ctags
+
+```bash
+sudo apt-get install ctags cscope
+#centos use yum
+```
+
+vim-gnome
+
+> need it to support system clipboard
+
+
+## Check Install
+
+
+Syntastic
+
+> `:SyntasticInfo` **inside vim**
+
+
+Neocomplete:
+
+1 **need** vim with **lua**
+
+> `:echo has("lua")` **inside vim**. return 1 needed
+
+> for `lua` support. **Mac** use **homebrew** to reinstall `vim`, there are plenty of tutorials.
+
+[Install vim with source code](http://chen-node.com/ChenLinux/source code/vim)
+
+## Experience
+
+### `vimrc` PATH:
+
+`~/.vim/`
+
+> for single user
+
+`/etc/vim/` 
+
+> for all users
+
+### Windows
 
 1. put under `C:\User\{username}\vimfiles`
 2. install vundle with windows
 3. revise **vimrc** 
-	1. `set rtp+=$HOME/vimfiles/bundle/Vundle.vim`
+
+> `set rtp+=$HOME/vimfiles/bundle/Vundle.vim`
