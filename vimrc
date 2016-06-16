@@ -16,7 +16,7 @@ Plugin 'sickill/vim-monokai' "monokai
 Plugin 'severin-lemaignan/vim-minimap' "mini-map
 Plugin 'vim-airline/vim-airline' "beautiful airline
 Plugin 'vim-airline/vim-airline-themes' "airline-theme
-Plugin 'PProvost/vim-markdown-jekyll' "jekyll syntax
+Plugin 'gabrielelana/vim-markdown' " markdown
 
 """Functionality"""
 ""No Operation""
