@@ -16,7 +16,6 @@ Plugin 'sickill/vim-monokai' "monokai
 Plugin 'severin-lemaignan/vim-minimap' "mini-map
 Plugin 'vim-airline/vim-airline' "beautiful airline
 Plugin 'vim-airline/vim-airline-themes' "airline-theme
-Plugin 'gabrielelana/vim-markdown' " markdown
 
 """Functionality"""
 ""No Operation""
@@ -31,6 +30,8 @@ Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'jelera/vim-javascript-syntax' " highlights for JS
 Plugin 'othree/javascript-libraries-syntax.vim' "JS Lib Syntax
 Plugin 'digitaltoad/vim-jade' "node-jade highlight
+Plugin 'gabrielelana/vim-markdown' " markdown
+Plugin 'evanmiller/nginx-vim-syntax' "Nginx
 
 "Need Operation
 "Plugin 'Valloric/YouCompleteMe' "YouCompleteMe
