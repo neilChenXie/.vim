@@ -81,7 +81,7 @@ helptags ~/.vim/doc
 """"""""""""""""""view module setting""""""""""""""
 ""NERDtree""
 "au VimEnter *  NERDTree
-let g:NERDTreeWinSize=15
+let g:NERDTreeWinSize=30
 let NERDTreeShowHidden=1
 map <F2> <Esc>:NERDTreeToggle<Cr>
 
