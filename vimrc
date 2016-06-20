@@ -23,7 +23,8 @@ Plugin 'scrooloose/syntastic'	"syntastic
 Plugin 'scrooloose/nerdcommenter.git' "NERD commenter
 Plugin 'tpope/vim-surround' "Surround change
 Plugin 'Shougo/neocomplete.vim' "Neocomplete
-Plugin 'tpope/vim-fugitive' "Git plugins
+Plugin 'tpope/vim-fugitive' "Git plugin
+Plugin 'airblade/vim-gitgutter' "Git status
 
 ""Need Operation""
 
