@@ -23,6 +23,8 @@ Plugin 'scrooloose/syntastic'	"syntastic
 Plugin 'scrooloose/nerdcommenter.git' "NERD commenter
 Plugin 'tpope/vim-surround' "Surround change
 Plugin 'Shougo/neocomplete.vim' "Neocomplete
+Plugin 'tpope/vim-fugitive' "Git plugins
+
 ""Need Operation""
 
 """Language Support"""
@@ -31,7 +33,6 @@ Plugin 'jelera/vim-javascript-syntax' " highlights for JS
 Plugin 'othree/javascript-libraries-syntax.vim' "JS Lib Syntax
 Plugin 'digitaltoad/vim-jade' "node-jade highlight
 Plugin 'gabrielelana/vim-markdown' " markdown
-Plugin 'evanmiller/nginx-vim-syntax' "Nginx
 
 "Need Operation
 "Plugin 'Valloric/YouCompleteMe' "YouCompleteMe

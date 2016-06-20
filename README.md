@@ -44,6 +44,10 @@ vim
 
 * phpfolding(done)
 
+`~/.vim/syntax/` ,`~/.vim/indent/` & `~/.vim/filetype.vim`:
+
+* nginx
+
 ## Other Install needed
 
 > some software are needed
