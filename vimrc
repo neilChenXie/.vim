@@ -24,7 +24,8 @@ Plugin 'scrooloose/nerdcommenter.git' "NERD commenter
 Plugin 'tpope/vim-surround' "Surround change
 Plugin 'Shougo/neocomplete.vim' "Neocomplete
 Plugin 'tpope/vim-fugitive' "Git plugin
-Plugin 'airblade/vim-gitgutter' "Git status
+Plugin 'airblade/vim-gitgutter' "Git File status
+Plugin 'Xuyuanp/nerdtree-git-plugin' "Git NERDTree status
 
 ""Need Operation""
 
