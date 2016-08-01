@@ -69,6 +69,7 @@ imap <C-c> <Esc>"+yy<Esc>a
 syntax on
 set ruler
 set nu
+set relativenumber
 set autoindent
 set smartindent
 set shiftwidth=4
