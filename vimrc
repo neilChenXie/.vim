@@ -34,7 +34,7 @@ Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'jelera/vim-javascript-syntax' " highlights for JS
 Plugin 'othree/javascript-libraries-syntax.vim' "JS Lib Syntax
 Plugin 'digitaltoad/vim-jade' "node-jade highlight
-Plugin 'gabrielelana/vim-markdown' " markdown
+"Plugin 'gabrielelana/vim-markdown' " markdown
 
 "Need Operation
 "Plugin 'Valloric/YouCompleteMe' "YouCompleteMe
